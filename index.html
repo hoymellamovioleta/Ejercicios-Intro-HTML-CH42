@@ -1,70 +1,120 @@
-<!-- Aquí va tu información-->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABOUT ME :)</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Victoria</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Luckiest+Guy&family=Oi&family=Pacifico&display=swap" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Luckiest+Guy&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oi&family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap CSS (estilos ya hechos) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat+Alternates&display=swap" rel="stylesheet">
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-     
-    <h1><span class="titulos">✨Victoria Villagómez ✨</span></h1>
-    <div class = "cont-img">
-        <img src="./yo.jpg" width="300" class="img-round">
-    </div>
-    
-    
 
-    <h2> <span class="titulos">👽 Victoria es...</span></h2>
-    <div class="text-box">
-        <p> Hoooolii, soy Victoria:<strong> mitad desarrolladora Full Stack en proceso, mitad creativa obsesionada con
-            colores bonitos, reels bien hechos y playlists que curan el alma.
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="corazon.html">🤍</a>
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hobbies">Hobbies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#music">Música</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="container text-center mt-5">
+
+    <!-- TÍTULO -->
+    <h1 class="titulos">✨ Victoria Villagómez ✨</h1>
+
+    <!-- IMAGEN -->
+    <div class="d-flex justify-content-center">
+      <img src="./img/yo.jpg" alt="Foto de Victoria" class="img-round">
+    </div>
+
+    <!-- SOBRE MÍ -->
+    <section id="about" class="text-box">
+      <h2 class="subtitulos">👽 Victoria es...</h2>
+      <p>
+         Soy Victoria:<strong> mitad desarrolladora Full Stack en proceso, mitad creativa obsesionada con
+            colores bonitos, reels bien hechos y playlists que curan el alma.</strong>
             Estudio marketing, programo en Java, hago diseños cuando me inspiro y tomo café como si fuera parte de mi
-            personalidad.</strong>
+            personalidad. <br><br> 
 
-        Tengo una habilidad especial para aprender rápido, reinventarme cada rato y meterme en proyectos que me
-        emocionan (aunque luego me den ansiedad… pero igual los hago).
-        Me encanta la tecnología, el arte, enseñar, crear y descubrir cómo todo eso se mezcla para hacer cosas
-        increíbles.
+            Tengo una habilidad especial para aprender rápido, reinventarme cada rato y meterme en proyectos que me
+            emocionan (aunque luego me den ansiedad… pero igual los hago).
+            Me encanta la tecnología, el arte, enseñar, crear y descubrir cómo todo eso se mezcla para hacer cosas
+            increíbles.<br><br> 
 
-        Si no estoy programando, probablemente estoy bailando, editando un video, hablándole a mis gatos o soñando
-        con mi próximo logro.
-        Siempre en modo: aprender, crecer y volverme la versión más épica de mí misma. 🚀💜
-    </p>
+            Si no estoy programando, probablemente estoy bailando, editando un video, hablándole a mis gatos o soñando
+            con mi próximo logro.
+            Siempre en modo: aprender, crecer y volverme la versión más épica de mí misma. 🚀💜
+      </p>
+    </section>
+
+    <!-- HOBBIES Y MÚSICA -->
+    <div class="row mt-4">
+
+      <!-- HOBBIES -->
+      <div class="col-md-6">
+        <div id="hobbies" class="card custom-card">
+          <div class="card-body">
+            <h3 class="subtitulos">😻 Mis hobbies</h3>
+            <div class="text-start p-3">
+                <ul>
+              <li>Ir al gym 🏋️</li>
+              <li>Leer 📚</li>
+              <li>Salir a pasear 🥂</li>
+              <li>Estudiar 🤓</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MÚSICA -->
+      <div class="col-md-6">
+        <div id="music" class="card custom-card">
+          <div class="card-body">
+            <h3 class="subtitulos">🎵 Top canciones</h3>
+            <div class="text-start p-3">
+              <ol>
+                <li><a href="https://youtu.be/QEiaTP72S98" target="_blank">La noche eterna</a></li>
+                <li><a href="https://youtu.be/mXJHvF7-_ZM" target="_blank">Libérame</a></li>
+                <li><a href="https://youtu.be/JAp31z8WWqw" target="_blank">IR</a></li>
+                <li><a href="https://youtu.be/eJwXivMnxcY" target="_blank">00:00</a></li>
+                <li><a href="https://youtu.be/owILizX-ZkY" target="_blank">Lo mío</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </main>
 
-    <div class="text-box-dos">
-        <h3> <span class="subtitulos">😻 Mis hobbies son: </span></h3>
-    <ul>
-        <li>Ir al gym 🏋️‍♂️</li>
-        <li>Leer 📚</li>
-        <li>Salir a pasear 🥂</li>
-        <li>Estudiar 🤓</li>
-    </ul>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <h4> <span class="subtitulos"> 🎵Mis canciones top son:🎵 </span></h4>
-    <ol>
-        <li><a href="https://youtu.be/QEiaTP72S98">La noche eterna (Él mató a un policía motorizado )🚓</a> </li>
-        <li><a href="https://youtu.be/mXJHvF7-_ZM">Liberame (Manuel Medrano) ✨</a></li>
-        <li><a href="https://youtu.be/JAp31z8WWqw">IR (Rubio)🎨</a></li>
-        <li><a href="https://youtu.be/eJwXivMnxcY">00:00 (Siddhartha)🪄</a></li>
-        <li><a href="https://youtu.be/owILizX-ZkY">Lo mío (Proof)🎧</a></li>
-    </ol>
-    </div>
-    
-
-    
 </body>
-
 </html>

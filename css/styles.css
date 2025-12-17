@@ -1,0 +1,73 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+  background-image: url('../img/nube.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+/* TÍTULOS */
+.titulos {
+  font-family: "Pacifico";
+  color: #69d4b7;
+  margin: 30px 0;
+}
+
+.subtitulos {
+  font-family: "Pacifico";
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+/* IMAGEN */
+.img-round {
+  width: 300px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+/* CAJA SOBRE MÍ */
+.text-box {
+  background-color: #b7f0e1;
+  padding: 25px;
+  border-radius: 12px;
+  margin: 30px auto;
+}
+
+/* TARJETAS (HOBBIES Y MÚSICA) */
+.custom-card {
+  background-color: #d1b6d2;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease; /* animación suave */
+
+}
+
+/* EFECTO HOVER */
+.custom-card:hover {
+  background-color: #69d4b7;
+  transform: scale(1.03);
+}
+
+/* LINKS */
+.custom-card a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.custom-card a:hover {
+  color: #ffffff;
+}
+
+.custom-navbar {
+  background-color: #ffc0ce; /* el color que tú quieras */
+}
